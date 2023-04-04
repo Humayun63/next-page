@@ -7,6 +7,7 @@ import Home from './components/Home'
 import About from './components/About'
 import Books from './components/Books'
 import ErrorPage from './components/ErrorPage'
+import Loading from './components/Loading'
 
 
 const router = createBrowserRouter([
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
         path:'books',
         element:<Books />
       },
+      {
+        path:'loading',
+        element:<Loading></Loading>
+      }
     ]
   }
 ])

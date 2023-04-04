@@ -10,3 +10,6 @@
 .default{
     @apply text-xl font-medium hover:text-blue-600
 }
+.loading-text{
+    @apply text-6xl font-bold tracking-wider
+}
