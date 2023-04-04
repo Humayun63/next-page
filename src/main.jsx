@@ -7,7 +7,7 @@ import Home from './components/Home'
 import About from './components/About'
 import Books from './components/Books'
 import ErrorPage from './components/ErrorPage'
-import Loading from './components/Loading'
+import BookDetails from './components/BookDetails'
 
 
 const router = createBrowserRouter([
@@ -30,8 +30,8 @@ const router = createBrowserRouter([
         loader: () => fetch('https://api.itbook.store/1.0/new'),
       },
       {
-        path:'loading',
-        element:<Loading></Loading>
+        path:'books/:id',
+        element:<BookDetails/>
       }
     ]
   }
