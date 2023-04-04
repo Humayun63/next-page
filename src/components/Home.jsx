@@ -15,6 +15,9 @@ const Home = () => {
                 <button className='btn bg-blue-600 py-2 px-4 rounded-md text-white font-semibold tracking-wide hover:bg-blue-500 mt-4'><Link to='/books'>
                     Visit Store <ShoppingCartIcon className='w-6 inline'/>
                 </Link></button>
+                <button className='ms-4 font-medium hover:text-blue-600'>
+                    <Link to='/about'>Learn More</Link>
+                </button>
             </div>
             <div className=''>
                 <Lottie animationData={bookLover} loop={true}></Lottie>
