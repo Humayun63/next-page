@@ -6,7 +6,6 @@ import { useLoaderData, useNavigation } from 'react-router-dom';
 const Books = () => {
     const {books} = useLoaderData();
     const navigation = useNavigation()
-    console.log(books);
     if(navigation.state === 'loading') {
         return <Loading></Loading>
     }
